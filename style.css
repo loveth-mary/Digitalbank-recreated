@@ -122,23 +122,15 @@ img {
     height: auto;
 }
 
-@media (max-width: 768px) {
-    section {
-        padding: 40px 20px;
-    }
-
+@media (max-width: 770px) {
     .navbar {
         flex-direction: column;
         gap: 15px;
     }
 
-    .navbar ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .hero {flex-direction: column;
         justify-content: center;
+        padding-right: 20px;
     }
 
 
@@ -151,7 +143,7 @@ img {
         text-align: center;
     }
 
-    button, p, h2 {
+    p, h2 {
         text-align: center;
     }
 }
