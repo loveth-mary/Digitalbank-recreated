@@ -1,128 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Digitalbank landing page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <div class="container">
     <nav class="navbar">
-        <h2 class="logo"><span><i class="fa fa-bank" style="color: #31d38a;"></i></span>Digitalbank</h2>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Bolg</li>
-            <li>Careers</li>
-        </ul>
-        <button>Request Invite</button>
+      <img src="images/logo-dark.svg" alt="">
+      <button>Request Invite</button>
+
+      <i class="fa-solid fa-bars hamburger" 
+      onclick="toggleMenu()"></i>
+
+      <ul id="menu" class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
     </nav>
 
     <section class="hero">
-        <div class="hero-text">
-            <h1>Next generation digital banking</h1>
-            <p>Take your financial life online. Your Digitalbank account will be a one-stop-shop for spending, saving, investing, and much more.</p>
-            <button>Request Invite</button>
+      <div class="hero-text">
+        <div>
+          <h1>Next generation digital banking</h1>
+          <p>Take your financial life online. Your Digitalbank account will be a one-stop-shop 
+          for spending, saving, budgeting, investing, and much more.</p>
         </div>
+        <div class="hero-button">
+          <button>Request Invite</button>
+        </div>
+      </div>
 
-        <div class="hero-image"><img src="images/image-hero.jpg" alt=""></div>
+      <div class="hero-image">
+        <img class="base-image" src="images/bg-intro-desktop.svg" alt="">
+        <img class="overlap-image" src="images/image-mockups.png" alt="">
+      </div>
     </section>
 
     <section class="why-choose">
-        <h2>Why choose Digitalbank?</h2>
-        <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like naver before.</p>
-        <div class="features">
-            <div class="feature-box">
-                <i class="fa fa-bank"></i>
-                <h3>Online Banking</h3>
-                <p>Our modern web and mobile application allow you to keep track of your finances wherever you are in the world.</p>
-            </div>
+      <h2>Why choose Digitalbank?</h2>
+      <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
 
-            <div class="feature-box">
-                <i class="fa fa-mobile-screen-button"></i>
-                <h3>Simple Budgeting</h3>
-                <p>See exactly where your money goes each month. Receive notifications when you are close to hitting your limits.</p>
-            </div>
-
-            <div class="feature-box">
-                <i class="fa fa-users"></i>
-                <h3>First Onboarding</h3>
-                <p>We don't do branches. Open your account in minutes online and start taking control of your finances right away.</p>
-            </div>
-
-            <div class="feature-box">
-                <i class="fa fa-gear"></i>
-                <h3>Open API</h3>
-                <p>Manage your savings, investments, and pensions, and much more from one account. Tracking your money has never being easier.</p>
-            </div>
+      <div class="features">
+        <div class="feature-box">
+          <img src="images/icon-online.svg" alt="">
+          <h3>Online Banking</h3>
+          <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
         </div>
+
+        <div class="feature-box">
+          <img src="images/icon-budgeting.svg" alt="">
+          <h3>Simple Budgeting</h3>
+          <p>See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.</p>
+        </div>
+
+        <div class="feature-box">
+          <img src="images/icon-onboarding.svg" alt="">
+          <h3>Fast Onboarding</h3>
+          <p>We don’t do branches. Open your account in minutes online and start taking control of your finances right away.</p>
+        </div>
+
+        <div class="feature-box">
+          <img src="images/icon-api.svg" alt="">
+          <h3>Open API</h3>
+          <p>Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="articles">
-        <h2>Latest Articles</h2>
-        <div class="articles-container">
-            <div class="card">
-                <img src="images/image-money.jpg" alt="">
-                <p class="person">By Claire Robinson</p>
-                <h4>Receive money in any currency with no fees</h4>
-                <p>The world is getting smaller and we are becoming more mobile. So why shouls you be forced to only receive money in a single ...</p>
-            </div>
-
-            <div class="card">
-                <img src="images/image-treat.jpg" alt="">
-                <p class="person">By Wilson Hutton</p>
-                <h4>Treat yourself without worrying about money</h4>
-                <p>Our simple budgeting feature allows you to separate spending and set realistic limit each month. That means you ...</p>
-            </div>
-
-            <div class="card">
-                <img src="images/image-travel.jpg" alt="">
-                <p class="person">By Wilson Hutton</p>
-                <h4>Take your Digitalbank card wherever you go</h4>
-                <p>We want you to enjoy your travels. This is why we don't charge any fees on purchases while you are abroad. we'll even ...</p>
-            </div>
-
-            <div class="card">
-                <img src="images/image-beta.jpg" alt="">
-                <p class="person">By Claire Robinson</p>
-                <h4>Our invite-only Beta accounts are now live!</h4>
-                <p>After a lot of hard work by the whole team, we are excited to launch our closed beta. it's easy to request an invite through ...</p>
-            </div>
+    <section class="articles-container">
+      <h2>Latest Articles</h2>
+      <div class="articles">
+        <div class="card">
+          <img src="images/image-currency.jpg" alt="">
+          <p class="person">By Claire Robinson</p>
+          <h4>Receive money in any currency with no fees</h4>
+          <p>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …</p>
         </div>
+
+        <div class="card">
+          <img src="images/image-restaurant.jpg" alt="">
+          <p class="person">By Wilson Hutton</p>
+          <h4>Treat yourself without worrying about money</h4>
+          <p>Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …</p>
+        </div>
+
+        <div class="card">
+          <img src="images/image-plane.jpg" alt="">
+          <p class="person">By Wilson Hutton</p>
+          <h4>Take your Digitalbank card wherever you go</h4>
+          <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …</p>
+        </div>
+
+        <div class="card">
+          <img src="images/image-confetti.jpg" alt="">
+          <p class="person">By Claire Robinson</p>
+          <h4>Our invite-only Beta accounts are now live!</h4>
+          <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...</p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <div class="socials">
-            <h3><span><i class="fa fa-bank" style="color: #31d38a; padding-bottom: 20px;"></i></span>Digitalbank</h3>
-            <a href=""><i class="fab fa-facebook" style="color: white;"></i></a>
-            <a href=""><i class="fab fa-youtube" style="color: white;"></i></a>
-            <a href=""><i class="fab fa-twitter" style="color: white;"></i></a>
-            <a href=""><i class="fab fa-pinterest" style="color: white;"></i></a>
-            <a href=""><i class="fab fa-instagram" style="color: white;"></i></a>
-        </div>
+      <div class="socials">
+        <div class="footer-logo"><img src="images/logo-light.svg" alt=""></div>
+        <img src="images/icon-facebook.svg" alt="">
+        <img src="images/icon-youtube.svg" alt="">
+        <img src="images/icon-twitter.svg" alt="">
+        <img src="images/icon-pinterest.svg" alt="">
+        <img src="images/icon-instagram.svg" alt="">
+      </div>
 
-        <div class="footer-nav1">
-            <ul>
-                <li>About Us</li>
-                <li>Contact</li>
-                <li>Blog</li>
-            </ul>
-        </div>
+      <div class="footer-nav1">
+        <ul>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Blog</li>
+        </ul>
+      </div>
 
-        <div class="footer-nav2">
-            <ul>
-                <li>Contact</li>
-                <li>Support</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </div>
-        
-        <div>
-            <button>Digitalbank</button>
-            <p>&copy Digitalbank. All Right Reserved</p>
-        </div>
+      <div class="footer-nav2">
+        <ul>
+          <li>Careers</li>
+          <li>Support</li>
+          <li>PolicyPrivacy</li>
+        </ul>
+      </div>
+
+      <div>
+        <button>Request Invite</button>
+        <p>© Digitalbank. All Rights Reserved</p>
+      </div>
     </footer>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu");
+      const hamburger = document.querySelector(".hamburger");
+
+      menu.classList.toggle("active");
+
+      hamburger.classList.toggle("fa-bars");
+
+      hamburger.classList.toggle("fa-xmark");
+    }
+  </script>
 </body>
 </html>
