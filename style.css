@@ -69,17 +69,19 @@ button {
 }
 
 .base-image {
-    width: 100%;
-    display: block;
+    width: 130%;
+    max-width: none;
     position: absolute;
-    bottom: 20%;
+    right: -35%;
+    bottom: 15%;
     z-index: 1;
 }
 
 .overlap-image {
     position: absolute;
-    top: -35%;
-    left: 20%;
+    width: 95%;
+    top: -23%;
+    left: 22%;
     z-index: 2;
 }
 
@@ -220,13 +222,22 @@ img {
         padding: 0;
     }
 
+    .hero-image {
+        height: 420px;
+        overflow: hidden;
+    }
+
     .base-image {
-        bottom: 30%;
+        content: url("images/bg-intro-mobile.svg");
+        width: 100%;
+        left: 0;
+        top: -20%;
+        bottom: auto;
     }
 
     .overlap-image {
         width: 90%;
-        top: -35%;
+        top: -140px;
         left: 5%;
     }
 
